@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px; /* Three rows each with 100px height */
+    grid-template-columns: 100px 100px 100px; /* Three columns each with 100px width */
+    grid-gap: 10px; /* Gap between grid items */
+  }
+  
+  .grid-item {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  

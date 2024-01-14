@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<body style = "background-image: url('https://res.cloudinary.com/practicaldev/image/fetch/s--u12JF9Xa--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/uskd4x557wno7irs1q71.png');">
+<style>
+  h1 {color:red;}
+  p {color:black;}
+</style>
+
+
+
+<script>
+know = {
+
+"Hello":"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp hi there!",
+"Who are you?":"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am bot",
+"E-resource":"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Please enter your year of study",
+"2 year":"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp IT/CSE",
+"IT":"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp sem1/sem2/sem3/sem4",
+"sem1": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp syllabus/e-resource",
+"syllabus":"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp mathematics/chemistry/beee",
+"chemistry":"UNIT I: WATER TREATBMENT UNIT II: ORGANIC POLYMERS UNIT III: CHEMISTRY OF FUEL AND COMBUSTION MECHANISM UNIT IV: CHEMICAL BASIS OF CORROSION AND ITS PREVENTION MECHANISM UNIT V: SPECTROMETRIC, SPECTROSCOPIC TECHNIQUES AND THEIR APPLICATIONS",
+"mathematics":"UNIT I: Matrices UNIT II: Linear Algebra and Mapping  UNIT III: Limit, Continuity and differentiation UNIT IV: Infinite Series & Expansion of Functions  UNIT V: Integral Calculus and Fourier Series",
+"beee":"UNIT I: D.C. CIRCUITS ANDA.C. CIRCUITS UNIT II: ELECTRICALMACHINES UNIT III: DIODES ANDDIODECIRCUITS UNIT IV: DIGITALELECTRONICS UNIT V: TRANSDUCERS  ",
+};
+function talk(){
+var user = document.getElementById("userBox").value;
+document.getElementById("userBox").value= "";
+document.getElementById("chatLog").innerHTML += user+"<br>";
+
+
+if(user in know){
+document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+}else
+
+{
+document.getElementById("chatLog").innerHTML += "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I don't understand<br>";
+
+}
+}
+
+
+
+
+</script>
+</head>
+
+
+
+<body>
+
+<p id="chatLog">Study bot <br></p>
+
+<input id="userBox" type="text" onkeydown="if(event.keyCode == 13) {talk()}">
+
+
+
+</body>
